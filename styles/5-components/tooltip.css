@@ -1,0 +1,27 @@
+.relative {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: var(--background);
+  color: black;
+  padding: 0.5rem 0.25rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  width: max-content;
+  border-radius: var(--rounded);
+  font-size: var(--font-xs);
+  line-height: var(--leading-4);
+  font-weight: var(--regular);
+  z-index: 1;
+  opacity: 0;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+}

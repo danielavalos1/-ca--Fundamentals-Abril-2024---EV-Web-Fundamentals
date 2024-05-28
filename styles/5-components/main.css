@@ -1,0 +1,116 @@
+.main {
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-12);
+}
+
+.main__container {
+  max-width: 42rem;
+  margin: auto;
+}
+
+.main__title {
+  font-size: var(--font-4xl);
+  font-weight: var(--extra-bold);
+  line-height: var(--leading-10);
+  margin-bottom: 3rem;
+}
+
+.main__figure {
+  margin-bottom: 1.5rem;
+}
+
+.main__image {
+  width: 100%;
+  border-radius: var(--rounded);
+  margin-bottom: 1.5rem;
+}
+
+.main__subtitle {
+  color: var(--foreground);
+  font-size: var(--font-2xl);
+  font-weight: var(--bold);
+  line-height: var(--leading-8);
+  margin-bottom: 0.5rem;
+}
+
+.main__paragraph {
+  color: var(--foreground);
+  font-size: var(--font-base);
+  font-weight: var(--regular);
+  line-height: var(--leading-7);
+  margin-bottom: 1.5rem;
+}
+
+.main__exercise-title {
+  font-size: var(--font-xl);
+  font-weight: var(--semibold);
+  line-height: var(--leading-8);
+  color: var(--foreground);
+  margin-bottom: 1.25rem;
+}
+
+.main__exercise-subtitle {
+  color: var(--foreground);
+  font-size: var(--font-base);
+  font-weight: var(--semibold);
+  line-height: var(--leading-6);
+  margin-bottom: 0.5rem;
+}
+
+.main__exercise-paragraph {
+  color: var(--foreground);
+  font-size: var(--font-base);
+  font-weight: var(--regular);
+  line-height: var(--leading-7);
+  margin-bottom: 1.5rem;
+}
+
+.main__code {
+  background-color: var(--foreground);
+  color: var(--muted);
+  font-family: var(--monospace);
+  font-size: var(--font-sm);
+  font-weight: var(--regular);
+  line-height: var(--leading-5);
+  padding: 0.75rem, 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--rounded);
+}
+
+.main__list {
+  list-style: none;
+  padding: 0 0 0 1.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.main__list-item {
+  color: var(--foreground);
+  font-size: var(--font-base);
+  font-weight: var(--regular);
+  line-height: var(--leading-7);
+  margin-bottom: 0.5rem;
+}
+
+.main__list-item::before {
+  content: "•";
+  color: var(--primary);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+.main__example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--foreground);
+  background-color: var(--muted);
+  font-size: var(--font-base);
+  font-weight: var(--regular);
+  line-height: var(--leading-7);
+  margin-bottom: 1.5rem;
+  padding: 3rem 0;
+  border-radius: var(--rounded-lg);
+  gap: 1rem;
+}

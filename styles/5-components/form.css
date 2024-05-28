@@ -1,0 +1,114 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: var(--background);
+  padding: 1rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  margin-bottom: 1.25rem;
+  width: 18.625rem;
+}
+
+.form__field label {
+  font-size: var(--font-sm);
+  font-weight: var(--medium);
+  color: var(--foreground);
+}
+
+.form__field input {
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--border);
+  width: 100%;
+  border-radius: var(--rounded-md);
+  font-size: var(--font-sm);
+  font-weight: var(--medium);
+  color: var(--foreground);
+  height: 2.5rem;
+}
+
+.form__field input:focus {
+  border-color: var(--primary);
+}
+
+.form__field input::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form__field textarea {
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--border);
+  width: 100%;
+  border-radius: var(--rounded-md);
+  font-size: var(--font-sm);
+  font-weight: var(--medium);
+  color: var(--foreground);
+  height: 5rem;
+  max-height: 5rem;
+  resize: none;
+}
+
+.form__field textarea:focus {
+  border-color: var(--primary);
+}
+
+.form__field textarea::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form__field span.error {
+  color: var(--danger-border);
+  font-size: var(--font-sm);
+  font-weight: var(--regular);
+  line-height: var(--leading-5);
+}
+
+.form__button {
+  width: 100%;
+}
+
+.form__control-radio {
+  display: flex;
+  flex-direction: column;
+  color: var(--foreground);
+  font-size: var(--font-sm);
+  font-weight: var(--medium);
+  margin-bottom: 1.25rem;
+}
+
+.form__control-radio code {
+  font-weight: var(--semibold);
+}
+
+.form__control-radio label {
+  font-weight: var(--medium);
+  color: var(--foreground);
+  font-size: var(--font-sm);
+  line-height: 0.875rem;
+}
+
+.form--response__pre {
+  background-color: var(--background);
+  width: 39rem;
+  max-width: 39rem;
+  color: var(--foreground);
+  font-family: var(--monospace);
+  font-size: var(--font-sm);
+  font-weight: var(--regular);
+  line-height: var(--leading-5);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--rounded);
+}
+
+.form--response__code {
+  display: block;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
